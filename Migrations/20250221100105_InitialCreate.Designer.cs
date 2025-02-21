@@ -11,7 +11,7 @@ using dt191g_mom4.Data;
 namespace dt191g_mom4.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20250221093243_InitialCreate")]
+    [Migration("20250221100105_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -26,15 +26,19 @@ namespace dt191g_mom4.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("ArtistName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DateRegister")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Length")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
                         .IsRequired()

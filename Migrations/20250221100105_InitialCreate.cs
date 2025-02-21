@@ -17,9 +17,10 @@ namespace dt191g_mom4.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    ArtistName = table.Column<string>(type: "TEXT", nullable: false),
                     Length = table.Column<int>(type: "INTEGER", nullable: false),
                     Title = table.Column<string>(type: "TEXT", nullable: false),
+                    Category = table.Column<string>(type: "TEXT", nullable: false),
                     DateRegister = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
