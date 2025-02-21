@@ -11,7 +11,7 @@ using dt191g_mom4.Data;
 namespace dt191g_mom4.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20250221092144_InitialCreate")]
+    [Migration("20250221093243_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

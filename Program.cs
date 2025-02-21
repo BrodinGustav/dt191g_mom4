@@ -7,7 +7,7 @@ builder.Services.AddOpenApi();
 
 
 builder.Services.AddDbContext<MusicDbContext>(options =>                                    //Använder MusicDbContext
-options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));   //Använder SqLite och importerar anslutningssträngen
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));   //Använder SqLite och importerar anslutningssträngen
 
 
 var app = builder.Build();
