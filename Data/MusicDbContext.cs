@@ -10,7 +10,7 @@ public class MusicDbContext : DbContext
     public MusicDbContext(DbContextOptions<MusicDbContext> options) : base(options) { }     //Databasanslutning
 
     //Tabeller
-    public DbSet<Music> Music { get; set; }
+    public DbSet<Music> Music { get; set; } //Skapar tabellen Music utifrån modellen Music
 
 }
 
